@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">Survey</h1>
+    <p id="description">
+        We are conducting a study, please follow the instructions. Thank you for
+        your cooperation
+    </p>
+    <form action="" id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Enter your name here:
+                <input type="text" name="" id="name" placeholder="Enter your name..." required /></label>
+            <label for="email" id="email-label">Enter your email here:
+                <input type="email" name="" id="email" placeholder="Enter your email..." required /></label>
+            <label for="number" id="number-label">Enter a number 1-100 here:
+                <input type="number" name="" id="number" min="0" max="100" placeholder="Enter a number 1-100..."
+                    required /></label>
+            <label for="games"><select name="" id="dropdown">
+                    Do you play these games?
+                    <option value="">Select one...</option>
+                    <option value="1">Valorant</option>
+                    <option value="2">Minecraft</option>
+                    <option value="3">Apex Legends</option>
+                </select></label>
+        </fieldset>
+        <fieldset>
+            <label for="playingStatus"><input class="inline" type="radio" name="status" id="playingStatus"
+                    value="playingStatus" />
+                Are you playing?</label>
+            <label for="workingStatus"><input class="inline" type="radio" name="status" id="workingStatus"
+                    value="workingStatus" />
+                Are you working?</label>
+            <label for="watchPeakFiction"><input class="inline" type="checkbox" name="" id="watchPeakFiction"
+                    value="watchPeakFiction" required />
+                I have seen Kaguya-sama: Love is War
+                <a href="https://www.crunchyroll.com/kaguya-sama-love-is-war">here</a></label>
+            <label for="terms-and-conditions"><input class="inline" type="checkbox" name="" id="terms-and-conditions"
+                    value="termsAndConditions" required />
+                I accept the
+                <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
+            <label for="opinions">
+                <textarea name="opinions" id="opinions" cols="30" rows="3"
+                    placeholder="Insert your opinion about Kaguya-sama here"></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" name="" id="submit" value="submit" />
+    </form>
+</body>
+
+</html>
