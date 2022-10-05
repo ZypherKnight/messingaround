@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="content">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sample HTML CSS Quiz</title>
+</head>
+<body>
+    <header>
+        <img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="Logo" id="logo">
+        <h1>HTML/CSS Quiz</h1>
+        <nav>
+            <ul>
+                <li><a href="#student-info" accesskey="1">INFO</a></li>
+                <li><a href="#html-questions" accesskey="2">HTML</a></li>
+                <li><a href="#css-questions" accesskey="3">CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method="post">
+                <section role="region" aria-labelledby="student-info">
+                    <h2 id="student-info">Student Info</h2>
+                    <div class="info">
+                        <label for="studentName">Name:
+                        </label>
+                            <input type="text" name="studentName" id="studentName" >
+                    </div>
+                    <div class="info">
+                        <label for="emailAddress">Email:</label>
+                            <input type="email" name="emailAddress" id="emailAddress" placeholder="Enter your Email...">
+                    </div>
+                    <div class="info">
+                        <label for="dateOfBirth">D.O.B.<span class="sr-only">(Date of Birth)</span> 
+                        </label>
+                            <input type="date" name="dateOfBirth" id="dateOfBirth" placeholder="Enter your Birthdate...">
+                    </div>
+                </section>
+                <section role="region" aria-labelledby="html-questions">
+                    <h2 id="html-questions">HTML Questions</h2>
+                    <div class="question-block">
+                        <p>1</p>
+                        <fieldset class="question" name="questionOne">
+                            <legend>
+                                Is the tag "ul" used for lists?
+                            </legend>
+                            <ul class="answers-list">
+                                <li><label for="true1html"><input type="radio" name="true1html-false1html" id="true1html" value="true">True</label></li>
+                                <li><label for="false1html"><input type="radio" name="true1html-false1html" id="false1html" value="false">False</label></li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                    <div class="question-block">
+                        <p>2</p>
+                        <fieldset class="question" name="questionTwo">
+                            <legend>
+                                Is the tag "h6" the biggest version of text?
+                            </legend>
+                            <ul class="answers-list">
+                                <li><label for="true2html"><input type="radio" name="true2html-false2html" id="true2html" value="true">True</label></li>
+                                <li><label for="false2html"><input type="radio" name="true2html-false2html" id="false2html" value="false">False</label></li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                </section>
+                <section role="region" aria-labelledby="css-questions">
+                    <h2 id="css-questions">CSS Questions</h2>
+                    <div class="formrow">
+                        <div class="question-block"><label for="cssQuestionOne" id="cssQuestionOne">Is background color used for text?</label></div>
+                        <div class="answer">
+                            <select name="cssQuestionOne" id="cssQuestionOne" required>
+                                <option value="">Select an option</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                        <div class="question-block"><label for="cssQuestionTwo" id="cssQuestionTwo">Is . used to access class in CSS</label> </div>
+                        <div class="answer">
+                            <textarea name="cssQuestionTwo" id="cssQuestionTwo" cols="30" rows="10" placeholder="example. True"></textarea>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+                <button type="submit" accesskey="s"> Submit </button>
+        </form>
+    </main>
+    <footer>
+        <address>
+           <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+San Francisco<br />
+California<br />
+USA
+        </address>
+    </footer>
+    </body>
+    
+</html>
