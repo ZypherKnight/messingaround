@@ -1,0 +1,12 @@
+*{
+    font-family: "Roboto";
+}
+h2{
+    font-weight: 600;
+    font-size: 16px;
+}
+img{
+    align-items: center;
+    display: block;
+    max-width: 100%;
+}
