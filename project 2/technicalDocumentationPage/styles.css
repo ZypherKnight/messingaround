@@ -1,0 +1,14 @@
+html{
+    background-color: #9ea074;
+}
+@media (max-width: 768px) {
+    html {
+      width: 358px;
+    }
+    .section{
+        width: 318px;
+    }
+    .h1{
+        width: 150px;
+    }
+} 
