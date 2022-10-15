@@ -11,8 +11,60 @@
     <header id="header">
         <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F000%2F576%2F096%2Foriginal%2Fstock-exchange-finance-logo-template-illustration-design-vector-eps-10.jpg&f=1&nofb=1&ipt=64412a4b386ce174b92be97ff257fd854c95ab1692e2172ae25946b9b790920f&ipo=images" alt="" id="header-img">
         <nav id="nav-bar">
-
+            <h1><a class="nav-link" href="#form">Form</a></h1>
+            <h1><a class="nav-link" href="#login">Login</a></h1>
+            <h1><a class="nav-link" href="#submit">Submit</a></h1>
         </nav>
+        <main>
+            <section id="form">
+                <video src="https://www.youtube.com/watch?v=6DaUZFbvWoc&" id="video"></video>
+                <form action="" id="survey-form">
+                    <fieldset>
+                        <label for="name" id="name-label">Enter your name here:
+                            <input type="text" name="" id="name" placeholder="Enter your name..." required /></label>
+                        <label for="email" id="email-label">Enter your email here:
+                            <input type="email" name="" id="email" placeholder="Enter your email..." required /></label>
+                        <label for="number" id="number-label">Enter a number 1-100 here:
+                            <input type="number" name="" id="number" min="0" max="100" placeholder="Enter a number 1-100..."
+                                required /></label>
+                        <label for="games"><select name="" id="dropdown">
+                                Do you play these games?
+                                <option value="">Select one...</option>
+                                <option value="1">Valorant</option>
+                                <option value="2">Minecraft</option>
+                                <option value="3">Apex Legends</option>
+                            </select></label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="playingStatus"><input class="inline" type="radio" name="status" id="playingStatus"
+                                value="playingStatus" />
+                            Are you playing?</label>
+                        <label for="workingStatus"><input class="inline" type="radio" name="status" id="workingStatus"
+                                value="workingStatus" />
+                            Are you working?</label>
+                        <label for="watchPeakFiction"><input class="inline" type="checkbox" name="" id="watchPeakFiction"
+                                value="watchPeakFiction" required />
+                            I have seen Kaguya-sama: Love is War
+                            <a href="https://www.crunchyroll.com/kaguya-sama-love-is-war" target="_blank">here</a></label>
+                        <label for="terms-and-conditions"><input class="inline" type="checkbox" name="" id="terms-and-conditions"
+                                value="termsAndConditions" required />
+                            I accept the
+                            <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
+                        <label for="opinions">
+                            <textarea name="opinions" id="opinions" cols="30" rows="3"
+                                placeholder="Insert your opinion about Kaguya-sama here"></textarea>
+                        </label>
+                    </fieldset>
+                    <input type="submit" name="" id="submit" value="submit"/>
+                </form>
+            </section>
+            <section id="login">
+                
+            </section>
+            <section id="submit">
+                
+            </section>
+        </main>
     </header>
 </body>
 </html>
