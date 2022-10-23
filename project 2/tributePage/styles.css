@@ -1,12 +1,51 @@
 *{
     font-family: "Roboto";
 }
+:root{
+    --main-red: rgb(249, 104, 104);
+    --main-yellow: rgb(255, 241, 85);
+}
+body{
+    text-align: center;
+    background-color: #333;
+}
+#about{
+    background-color: var(--main-red);
+    max-width: 600px;
+    align-items: center;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+h1{
+    color: var(--main-yellow);
+}
 h2{
     font-weight: 600;
     font-size: 16px;
 }
-img{
+p{
+    max-width: 550px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+}
+p img{
     align-items: center;
-    display: block;
+    display: flex;
     max-width: 100%;
 }
+@media (max-width: 75em) {
+    html {
+      font-size: 60%;
+    }
+}
+  @media (max-width: 61.25em) {
+    html {
+      font-size: 58%;
+    }
+}
+  @media (max-width: 28.75em) {
+    html {
+      font-size: 55%;
+    }
+  }
