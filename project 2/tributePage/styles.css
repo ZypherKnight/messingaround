@@ -9,7 +9,7 @@ body{
     text-align: center;
     background-color: #333;
 }
-#about{
+.about{
     background-color: var(--main-red);
     max-width: 600px;
     align-items: center;
@@ -34,13 +34,12 @@ p img{
     display: flex;
     max-width: 100%;
 }
-sideLeft{
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, rgb(134, 133, 133) 0%, rgb(234, 231, 231) 25%, white 67%);
-  border-radius: 80% 80% 100% 100%;
-  top: 100%;
-  left: 100%;
+.leftImg{
+    max-width: 800px;
+    max-height: 800px;
+    position: absolute;
+    left: 10%;
+    top: 4.5%;
 }
 
 @media (max-width: 75em) {
