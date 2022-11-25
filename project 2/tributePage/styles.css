@@ -4,6 +4,7 @@
 :root{
     --main-red: rgb(249, 104, 104);
     --main-yellow: rgb(255, 241, 85);
+    --main-blue: rgb(12, 0, 139);
 }
 body{
     text-align: center;
@@ -35,11 +36,46 @@ p img{
     max-width: 100%;
 }
 .leftImg{
-    max-width: 800px;
-    max-height: 800px;
+    max-width: 700px;
+    max-height: 700px;
     position: absolute;
     left: 10%;
     top: 4.5%;
+}
+.rightImg{
+  max-width: 700px;
+  max-height: 700px;
+  position: absolute;
+  right: 10%;
+  top: 4.5%;
+}
+.discordServerContainers{
+  background-color: var(--main-red);
+  width: 900px;
+  height: 250px;
+  align-items: center;
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  top: 70%;
+  right: 30%;
+}
+.discordServerContainersKaguya p{
+  color: var(--main-blue);
+  position: relative;
+  margin-top: 10px;
+  max-width: 700px;
+  max-height: 500px;
+  text-align: center;
+  font-weight: bold;
+}
+.kaguyaSamalogos{
+  max-width: 100px;
+  max-height: 100px;
+  position: relative;
+  bottom: 25%;
+  right: 10px;
+  margin-left: 16px;
 }
 
 @media (max-width: 75em) {
