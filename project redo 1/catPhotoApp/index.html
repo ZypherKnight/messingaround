@@ -1,4 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">  
+    <meta charset="UTF-8">
+    <head>
+        <title>CatPhotoApp</title>
+    </head>
     <body>
         <main>
             <h1>CatPhotoApp</h1>
@@ -34,16 +39,33 @@
             <section>
                 <h2>Cat Form</h2>
                 <form action="https://freecatphotoapp.com/submit-cat-photo">
-                    <label for="">
-                        <input type="radio" name="indoor-outdoor" id="indoor"  value="indoor"> Indoor
-                    </label>
-                    <label for="">
-                        <input type="radio" name="indoor-outdoor" id="outdoor" value="outdoor">Outdoor
-                    </label>
-                    <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+                    <fieldset>
+                        <legend>
+                            Is your cat an indoor or outdoor cat?
+                        </legend>
+                        <label for="">
+                            <input type="radio" name="indoor-outdoor" id="indoor"  value="indoor" checked> Indoor
+                        </label>
+                        <label for="">
+                            <input type="radio" name="indoor-outdoor" id="outdoor" value="outdoor">Outdoor
+                        </label>
+                        <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            What's your cat's personality?
+                        </legend>
+                        <input type="checkbox" name="personality" id="loving" value="loving" checked> <label for="loving">loving</label>
+                        <input type="checkbox" name="personality" id="lazy" value="lazy"> <label for="lazy">lazy</label>
+                        <input type="checkbox" name="personality" id="energetic" value="energetic"> <label for="energetic">energetic</label>
+                    </fieldset>
                     <button type="submit">Submit</button>
                 </form>
             </section>
         </main>
+        <footer>
+            <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a> 
+            </p>
+        </footer>
     </body>
 </html>
