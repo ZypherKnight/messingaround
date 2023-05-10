@@ -35,19 +35,28 @@ p img{
     display: flex;
     max-width: 100%;
 }
-.leftImg{
+.sideRight{
+    max-width: 700px;
+    max-height: 700px;
+    position: absolute;
+    right: 10%;
+    top: 4.5%;
+}
+.sideLeft{
     max-width: 700px;
     max-height: 700px;
     position: absolute;
     left: 10%;
     top: 4.5%;
 }
+.leftImg{
+    max-width: 700px;
+    max-height: 700px;
+}
 .rightImg{
   max-width: 700px;
   max-height: 700px;
-  position: absolute;
-  right: 10%;
-  top: 4.5%;
+  position: relative;
 }
 .discordServerContainers{
   background-color: var(--main-red);
@@ -82,14 +91,26 @@ p img{
     html {
       font-size: 60%;
     }
+    #image{
+      width: 60%;
+      height: auto;
+    }
 }
   @media (max-width: 61.25em) {
     html {
       font-size: 58%;
     }
+    #image{
+      width: 58%;
+      height: auto;
+    }
 }
   @media (max-width: 28.75em) {
     html {
       font-size: 55%;
+    }
+    #image{
+      width: 55%;
+      height: auto;
     }
   }
