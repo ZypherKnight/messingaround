@@ -87,11 +87,25 @@ p img{
   margin-left: 16px;
 }
 
+@media (max-width: 115em) {
+  #image{
+    width: 75%;
+    height: auto;
+  }
+  .discordServerContainers{
+    width: 75%;
+    height: auto;
+  }
+}
 @media (max-width: 75em) {
     html {
       font-size: 60%;
     }
     #image{
+      width: 60%;
+      height: auto;
+    }
+    .discordServerContainers{
       width: 60%;
       height: auto;
     }
@@ -101,16 +115,24 @@ p img{
       font-size: 58%;
     }
     #image{
-      width: 58%;
+      width: 55%;
       height: auto;
     }
+    .discordServerContainers{
+      width: 55%;
+      height: auto;
+    }   
 }
   @media (max-width: 28.75em) {
     html {
       font-size: 55%;
     }
     #image{
-      width: 55%;
+      width: 40%;
+      height: auto;
+    }
+    .discordServerContainers{
+      width: 40%;
       height: auto;
     }
   }
